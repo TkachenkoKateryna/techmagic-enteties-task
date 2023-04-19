@@ -4,8 +4,8 @@ export class AppError extends Error {
 	constructor(message) {
 		super(message);
 		this.name = 'AppError';
-		this.message = message;
-		this.#showError(message);
+		this.message = message || 'Oops, something went wrong';
+		this.#showError(this.message);
 	}
 
 	#showError = (mes) => {

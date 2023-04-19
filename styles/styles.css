@@ -94,9 +94,9 @@ form {
 }
 
 .error {
+	display: none;
 	width: 100%;
 	background: #e66262;
 	color: white;
 	height: 40px;
-	display: none;
 }

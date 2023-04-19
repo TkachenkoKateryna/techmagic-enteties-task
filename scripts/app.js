@@ -10,14 +10,9 @@ class App {
 			posts.render();
 			posts.postForm.addEventListener('submit', posts.createPost);
 		} catch {
-			throw new AppError('Oops, smth went wrong');
+			throw new AppError(error.message);
 		}
-	}
-
-	static addGlobalErrorHandler() {
-		window.addEventListener('error', (event) => console.log(event));
 	}
 }
 
-App.addGlobalErrorHandler();
 App.init();
