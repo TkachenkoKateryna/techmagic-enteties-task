@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/styles.css" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="scripts/app.js" defer type="module"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<template id="single-post">
+			<li class="post-item" id="">
+				<h2></h2>
+				<p></p>
+				<button class="btn btn-del">Delete</button>
+			</li>
+		</template>
+		<div class="error"></div>
+		<div class="container">
+			<form>
+				<div class="form_field">
+					<label class="form_label" for="title">Title</label>
+					<input class="form_control" type="text" id="title" />
+				</div>
+				<div class="form_field">
+					<label class="form_label" for="content">Content</label>
+					<textarea
+						class="form_control"
+						type="text"
+						cols="3"
+						id="content"
+					></textarea>
+				</div>
+				<div>
+					<button class="btn btn-primary" id="btn-add">Add</button>
+				</div>
+			</form>
+			<section class="posts-section">
+				<h2>Posts</h2>
+				<ul class="posts-list"></ul>
+			</section>
+		</div>
+	</body>
+</html>

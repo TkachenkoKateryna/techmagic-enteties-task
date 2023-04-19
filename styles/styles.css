@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+.btn {
+	height: 40px;
+	padding: 10px 40px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	background-color: darkblue;
+	color: white;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+form {
+	width: 600px;
+	padding: 20px;
+	border: 1px lightgrey solid;
+	margin: 0 30px 0 0;
+	align-self: flex-start;
+}
+
+.form_label {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.form_field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.form_control {
+	all: unset;
+	border: 1px lightgrey solid;
+	padding: 10px;
+}
+
+.posts-section {
+	border: 1px lightgrey solid;
+	padding: 5px 20px;
+	flex: 1;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.posts-list {
+	list-style: none;
+}
+
+.post-item {
+	margin: 1rem 0;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+	padding: 1rem;
+}
+
+.post-item h2,
+.post-item p {
+	margin: 0.5rem 0;
+}
+
+.post-item h2 {
+	font-size: 1.5rem;
+	color: #414141;
+}
+
+.btn-del {
+	border-color: #920101;
+	background: #920101;
+	color: white;
+}
+
+.post-item button:hover,
+.post-item button:active {
+	border-color: #dd2929;
+	background: #dd2929;
+}
+
+.error {
+	width: 100%;
+	background: #e66262;
+	color: white;
+	height: 40px;
+	display: none;
+}
